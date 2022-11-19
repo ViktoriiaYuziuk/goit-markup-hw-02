@@ -7,6 +7,7 @@
     --portfolio-btn-bcg-color: #F5F4FA;
     --logo-black-color: #000000;
     --footer-link-color: rgba(255, 255, 255, 0.6);
+    --stroke-color: #ECECEC;
     
 }
 
@@ -25,9 +26,6 @@ body {
     text-decoration: none;
  }
 
- h1, h2, h3, h4, h5, h6  {
-    color: var(--primary-text-color);
- }
 
  p {
     color: var(--secondary-text-color);
@@ -38,11 +36,11 @@ body {
  /* Логотип ---------------------------------------*/
 
 .logo {
-    color: var(--logo-black-color)
+    color: var(--logo-black-color);
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 1,2;   
+    line-height: 1.2;   
 }
 .logo-part {
     color: var(--accent-color);
@@ -67,7 +65,7 @@ body {
     color: var(--accent-color);
 }
 
-/* Пошта і телефон -------------------------------*/
+/* Пошта і телефон ---------------------------------*/
 
 .contact-list .link {   
     color: var(--secondary-text-color);
@@ -127,9 +125,14 @@ body {
 
 /* Чим ми займаємось------------------------------------------------------------------------------------------------------------ */
 
+.our-job {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
 
-
-/* Команда --------------------------------------------------------------------------------------------------------------------- */
+/* Наша команда ---------------------------------------------------------------------------------------------------------------- */
 
 .team-title {
     font-weight: 700;
@@ -158,15 +161,28 @@ body {
 }
 
 .footer .logo {
-    color: var(--white-color)
+    color: var(--white-color);
 }
 
 .footer .address {
-    color: var(--white-color)
+    color: var(--white-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.footer .address:hover,
+.footer .address:focus {
+    color: var(--accent-color);
 }
 
 .footer .link {
-    color: var(--footer-link-color)
+    color: var(--footer-link-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 .footer .link:hover,
@@ -181,11 +197,35 @@ body {
 .filters .button {
     background-color: var(--portfolio-btn-bcg-color);
     color: var(--primary-text-color);
+
     font-family: inherit;
+
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
 }
 
 .filters .button:hover,
 .filters .button:focus {
     background-color: var(--accent-color);
     color: var(--white-color);
+}
+
+/* Проєкти ------------------------------------------ */
+
+.project-list .title {
+    color: var(--primary-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project-list  .item {
+    font-size: 16px;
+    line-height: 1.88;
 }
